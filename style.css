@@ -18,7 +18,6 @@ header {
 html, body {
     margin: 0;
     padding: 0;
-  /* Prevent horizontal scrolling */
 }
 
 .nav-container{
@@ -40,8 +39,6 @@ html, body {
    align-items: center;
 }
 
-
-/* Add hover effect for links */
 .nav-container a {
   text-decoration: none;
   color: #201E43;
@@ -71,8 +68,6 @@ html, body {
 
 }
 
-
-
 .Jtextlocation{
     margin-bottom: -20px;
 }
@@ -95,9 +90,9 @@ html, body {
     
 }
 .main-text-link {
-  text-decoration: none; /* Remove underline from the link */
-  color: inherit; /* Inherit color from parent, or set a specific color */
-  display: inline-block; /* Ensure it wraps around the h1 */
+  text-decoration: none; 
+  color: inherit; 
+  display: inline-block; 
 }
 
 .info-text{
@@ -120,12 +115,12 @@ html, body {
 
   @media (max-width: 768px) {
     .info-text {
-        flex-direction: column; /* Stack columns vertically */
-        align-items: center; /* Center them horizontally on smaller screens */
+        flex-direction: column; 
+        align-items: center; 
     }
     .text-element-collum {
-      width: 90%; /* Make each column take full width on small screens */
-      margin-bottom: 20px; /* Add spacing between stacked elements */
+      width: 90%;
+      margin-bottom: 20px;
   }
 
 }
@@ -155,10 +150,8 @@ html, body {
       opacity: 1;
       transform: translateX(0);
     }
-  }
+  } 
 
-  
-/* Carousel Container */
 .carousel {
   position: relative;
   width: 100%;
@@ -167,30 +160,28 @@ html, body {
   overflow: hidden;
 }
 
-/* Carousel Wrapper */
 .carousel-wrapper {
   display: flex;
   transition: transform 0.5s ease;
   
 }
 
-/* Project Card */
 .project-card {
   display: grid;
-  grid-template-columns: 1fr 1fr; /* Split into two equal halves */
+  grid-template-columns: 1fr 1fr;
   border: 4px solid #201E43;
   background-color: #201E43;
   color: #EEEEEE;
   border-radius: 10px;
   overflow: hidden;
-  width: 100%; /* Adjusted width for carousel compatibility */
+  width: 100%; 
   box-shadow: 0 4px 8px;
-  flex-shrink: 0; /* Ensures the card doesn't shrink in the flex container */
+  flex-shrink: 0; 
 }
 
 
 .project-card__image {
-  overflow: hidden; /* Prevent image overflow */
+  overflow: hidden; 
   background-color: #201E43;
   border-radius: 10px;
 }
@@ -215,7 +206,7 @@ html, body {
 }
 
 .project-card__content h2 {
-  margin: 0 0 10px; /* Add space below the title */
+  margin: 0 0 10px; 
   font-size: 1.8rem;
   color: #508C9B;
   background-color: #201E43;
@@ -229,7 +220,6 @@ html, body {
   background-color: #201E43;
 }
 
-/* Carousel Navigation Arrows */
 .arrow {
   position: absolute;
   top: 50%;
@@ -247,31 +237,29 @@ html, body {
 
 .left-arrow {
   left: 5px;
-  background-image: url('/image/arrow-left.png'); /* Replace with your left arrow image */
-  background-size: contain; /* Ensure the image fits within the button */
+  background-image: url('/image/arrow-left.png'); 
+  background-size: contain; 
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .right-arrow {
   right: 5px;
-  background-image: url('/image/arrow-right.png'); /* Replace with your right arrow image */
+  background-image: url('/image/arrow-right.png'); 
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .left-arrow:hover {
-  transform: translateY(-50%) translateX(-5px); /* Maintain vertical centering and move left */
+  transform: translateY(-50%) translateX(-5px); 
   transition: transform 0.3s ease;
 }
 
 .right-arrow:hover {
-  transform: translateY(-50%) translateX(5px); /* Maintain vertical centering and move right */
+  transform: translateY(-50%) translateX(5px); 
   transition: transform 0.3s ease;
 }
-
-/*project links*/
 
 .link-selection{
   background-color: transparent;
@@ -289,15 +277,15 @@ html, body {
 
 .link-text1, .link-text2 {
   display: flex;
-  justify-content: center; /* Horizontally center the text */
-  align-items: center; /* Vertically center the text */
+  justify-content: center; 
+  align-items: center;
   background-color: transparent;
   color: #EEEEEE;
   text-decoration: none;
 }
 
 
-/* Dots */
+
 .carousel-dots {
   display: flex;
   justify-content: center;
@@ -317,11 +305,11 @@ html, body {
   background: #201E43;
 }
 
-/* Responsive Adjustments */
+
 @media (max-width: 768px) {
   .project-card {
-    grid-template-columns: 1fr; /* Stack content on smaller screens */
-    width: 95%; /* Make cards fit better on small screens */
+    grid-template-columns: 1fr;
+    width: 95%;
   }
 
   .project-card__image img {
@@ -349,16 +337,15 @@ html, body {
   
 @media (max-width: 768px) {
     .project-card {
-      grid-template-columns: 1fr; /* Stack on smaller screens */
-      height: auto; /* Let height adjust dynamically */
+      grid-template-columns: 1fr;
+      height: auto;
     }
   
     .project-card__image img {
-      height: 200px; /* Limit image height on smaller screens */
+      height: 200px;
     }
-  }
+}
 
-  
 .projects{
     display: flex;
     flex-direction: column;
@@ -407,15 +394,15 @@ html, body {
   }
   
   .position-title-time {
-    width: 60%; /* 60% width for Name and Time Spent */
+    width: 60%;
   }
   
   .position-description {
-    width: 20%; /* 20% width for Job Description */
+    width: 20%;
   }
   
   .position-technologies {
-    width: 20%; /* 20% width for Technologies Used */
+    width: 20%;
     display: flex;
     gap: 5px;
     flex-wrap: wrap;
@@ -440,7 +427,7 @@ html, body {
     background-color: #EEEEEE;
   } 
 .extended-info.active ~ .toggle-arrow {
-    bottom: 10px; /* Adjust this value to fine-tune the positioning */
+    bottom: 10px;
 }
 
   .extended-info {
@@ -490,20 +477,20 @@ html, body {
  
  
  .fade-in {
-    opacity: 0; /* Initially hidden */
-    transition: opacity 0.5s ease-out, transform 0.5s ease-out; /* Smooth transition */
+    opacity: 0;
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out; 
 }
 
 .fade-in.visible {
-    animation: fadeIn 0.8s ease-out forwards; /* Start animation */
+    animation: fadeIn 0.8s ease-out forwards;
 }
 
 .fade-in.left{
-  opacity: 0; /* Initially hidden */
-  transition: opacity 0.5s ease-out, transform 0.5s ease-out; /* Smooth transition */
+  opacity: 0;
+  transition: opacity 0.5s ease-out, transform 0.5s ease-out;
 }
 .fade-in.left.visible {
-  animation: fadeInleft 0.8s ease-out forwards; /* Start animation */
+  animation: fadeInleft 0.8s ease-out forwards;
 }
 
 .vision-page{
@@ -523,7 +510,7 @@ html, body {
  footer {
     height: 30vh;
     background-color: #201E43; 
-    color: #EEEEEE; /* White text color */
+    color: #EEEEEE;
     text-align: right;
     padding: 50px 0 ;
     left: 0px;
