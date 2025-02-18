@@ -1,6 +1,7 @@
 const wrapper = document.querySelector('.carousel-wrapper');
 const dots = document.querySelectorAll('.dot');
-const cards = document.querySelectorAll('.project-card');
+const cards = document.querySelectorAll('.project-card, .project-card-2');
+
 let currentIndex = 0;
 
 function updateCarousel(index) {

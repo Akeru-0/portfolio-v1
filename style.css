@@ -2,7 +2,7 @@
     
     box-sizing: border-box;
     background-color: #EEEEEE;
-    color: #201E43;
+    color: #232121;
     font-family: 'Inter', sans-serif;
     
 }
@@ -41,7 +41,7 @@ html, body {
 
 .nav-container a {
   text-decoration: none;
-  color: #201E43;
+  color: #232121;
   transition: color 0.3s;
 }
 
@@ -76,7 +76,7 @@ html, body {
     
     display: grid;
     place-items: center;
-    border: 4px solid #201E43;
+    border: 4px solid #232121;
     border-radius: 10px;
     width: 70px;
     align-items: center;
@@ -155,7 +155,7 @@ html, body {
 .carousel {
   position: relative;
   width: 100%;
-  max-width: 1600px;
+  max-width: 1700px;
   margin: 0 auto;
   overflow: hidden;
 }
@@ -169,8 +169,21 @@ html, body {
 .project-card {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  border: 4px solid #201E43;
-  background-color: #201E43;
+  border: 4px solid #232121;
+  background-color: #232121;
+  color: #EEEEEE;
+  border-radius: 10px;
+  overflow: hidden;
+  width: 100%; 
+  box-shadow: 0 4px 8px;
+  flex-shrink: 0; 
+}
+
+.project-card-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border: 4px solid #cdcbcb;
+  background-color: #cdcbcb;
   color: #EEEEEE;
   border-radius: 10px;
   overflow: hidden;
@@ -182,11 +195,28 @@ html, body {
 
 .project-card__image {
   overflow: hidden; 
-  background-color: #201E43;
+  background-color: #232121;
   border-radius: 10px;
 }
 
 .project-card__image img {
+  width: 90%;
+  height: 90%;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 2.5%;
+  margin-bottom: 2.5%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.project-card__image-2 {
+  overflow: hidden; 
+  background-color: #cdcbcb;
+  border-radius: 10px;
+}
+
+.project-card__image-2 img {
   width: 90%;
   height: 90%;
   margin-left: 5%;
@@ -202,22 +232,44 @@ html, body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-color: #201E43;
+  background-color: #232121;
 }
 
 .project-card__content h2 {
   margin: 0 0 10px; 
   font-size: 1.8rem;
-  color: #508C9B;
-  background-color: #201E43;
+  color: #cdcbcb;
+  background-color: #232121;
 }
 
 .project-card__content p {
   margin: 5px 0;
   font-size: 1rem;
-  color: #508C9B;
+  color: #cdcbcb;
   line-height: 1.5;
-  background-color: #201E43;
+  background-color: #232121;
+}
+.project-card__content-2 {
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #cdcbcb;
+}
+
+.project-card__content-2 h2 {
+  margin: 0 0 10px; 
+  font-size: 1.8rem;
+  color: #232121;
+  background-color: #cdcbcb;
+}
+
+.project-card__content-2 p {
+  margin: 5px 0;
+  font-size: 1rem;
+  color: #232121;
+  line-height: 1.5;
+  background-color: #cdcbcb;
 }
 
 .arrow {
@@ -272,7 +324,12 @@ html, body {
 .link-image1, .link-image2 {
   width: 30px;
   height: 30px;
-  background-color: #201E43;
+  background-color: #232121;
+}
+.link-image1-2, .link-image2-2 {
+  width: 30px;
+  height: 30px;
+  background-color: #cdcbcb;
 }
 
 .link-text1, .link-text2 {
@@ -281,6 +338,14 @@ html, body {
   align-items: center;
   background-color: transparent;
   color: #EEEEEE;
+  text-decoration: none;
+}
+.link-text1-2, .link-text2-2 {
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  background-color: transparent;
+  color: #201E43;
   text-decoration: none;
 }
 
@@ -302,7 +367,7 @@ html, body {
 }
 
 .dot.active {
-  background: #201E43;
+  background: #232121;
 }
 
 
@@ -323,8 +388,16 @@ html, body {
 .technologies{
     display: flex;
     gap: 15px;
-    background-color: #201E43;
+    background-color: #232121;
 }
+
+.technologies-2{
+  display: flex;
+  gap: 15px;
+  background-color: #cdcbcb;
+}
+
+
 .tech{
     border: 2px solid #EEEEEE;
     font-weight: bold;
@@ -385,7 +458,7 @@ html, body {
 .position-full-width {
     display: flex;
     flex-direction: column;
-    border: 2px solid #201E43;
+    border: 2px solid #232121;
     border-left: none;
     border-right: none;
     border-top: none;
@@ -473,7 +546,7 @@ html, body {
     display: block;
   }
  .technologies-info{
-    border: 2px solid #201E43;
+    border: 2px solid #232121;
     font-weight: bold;
     width: 60px;
     height: 25px;
@@ -481,7 +554,7 @@ html, body {
     text-align: center;
     justify-content: center;
     color: #EEEEEE;
-    background-color: #201E43;
+    background-color: #232121;
 
  }
  
@@ -519,7 +592,7 @@ html, body {
 
  footer {
     height: 30vh;
-    background-color: #201E43; 
+    background-color: #232121; 
     color: #EEEEEE;
     text-align: right;
     padding: 50px 0 ;
@@ -532,7 +605,7 @@ html, body {
 .footer-text{
     
     color: #EEEEEE;
-    background-color: #201E43;
+    background-color: #232121;
     font-size: 40px;
     margin-right: 2.5%;
 
@@ -540,7 +613,7 @@ html, body {
 }
 .footer-resume{
     color: #EEEEEE;
-    background-color: #201E43;
+    background-color: #232121;
     margin-right: 2.5%;
     
 }
@@ -552,7 +625,7 @@ html, body {
 }
 .footer-github{
     color: #EEEEEE;
-    background-color: #201E43;
+    background-color: #232121;
     margin-right: 2.5%;
     
 }
